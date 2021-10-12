@@ -1,0 +1,6 @@
+type Image @model {
+  id: ID!
+  description: String
+  date: AWSDateTime
+  image: String!
+}

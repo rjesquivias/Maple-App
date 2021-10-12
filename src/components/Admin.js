@@ -2,6 +2,7 @@ import logo from '../logo.svg';
 import AuthForm from './AuthForm';
 import { useEffect, useState } from 'react';
 import { loggedIn, signOut } from '../util/Auth';
+import ImageUploadForm from './ImageUploadForm';
 
 const Admin = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -26,6 +27,7 @@ const Admin = () => {
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
+            <ImageUploadForm />
             <button onClick={signOut}>Sign Out</button>
           </header>
         </div>
