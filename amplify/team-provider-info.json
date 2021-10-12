@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyed1b0773c7134-staging-24221-authRole",
+      "UnauthRoleArn": "arn:aws:iam::510722588970:role/amplify-amplifyed1b0773c7134-staging-24221-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::510722588970:role/amplify-amplifyed1b0773c7134-staging-24221-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-amplifyed1b0773c7134-staging-24221-deployment",
+      "UnauthRoleName": "amplify-amplifyed1b0773c7134-staging-24221-unauthRole",
+      "StackName": "amplify-amplifyed1b0773c7134-staging-24221",
+      "StackId": "arn:aws:cloudformation:us-west-2:510722588970:stack/amplify-amplifyed1b0773c7134-staging-24221/06549f50-2b06-11ec-a06e-0a1ab3459caf",
+      "AmplifyAppId": "da76uwxwyb7at"
+    },
+    "categories": {
+      "auth": {
+        "mapleapp953d99a7": {}
+      }
+    }
+  }
+}
