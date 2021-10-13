@@ -1,3 +1,5 @@
+import Hamburger from "./Hamburger";
+
 const Navbar = () => {
     return (
         <div className="nav">
@@ -8,6 +10,7 @@ const Navbar = () => {
                 <span className="user-nav__link">Gallery</span>
                 <span className="user-nav__link">Breeder</span>
             </nav> 
+            <Hamburger />
         </div>
     );
 };
