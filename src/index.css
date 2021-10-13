@@ -1,13 +1,71 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+  font-size: 36px;
+  line-height: 1.7;
+  color: white;
+}
+
+h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.header {
+  height: 66vh;
+  background-image: url(img/Maple\ Hero.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.nav {
+  height: 14%;
+  background-color: #333333;
+  opacity: 66%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.user-nav {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3rem;
+  font-size: 24px;
+}
+
+.user-nav__link {
+  padding: 0 2rem;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.user-nav__link:hover {
+  background-color: rgb(26, 26, 26);
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+  }
 }

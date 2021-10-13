@@ -1,11 +1,10 @@
 import './App.css';
-import Admin from './components/Admin';
+import Homepage from './components/Homepage';
 
 function App() {
   return (
     <>
-    <h1>Hello From React</h1>
-    <Admin />
+    <Homepage />
     </>
   )
 }
