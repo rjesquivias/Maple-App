@@ -165,7 +165,6 @@ hr {
 }
 
 .block-content-background {
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,6 +172,7 @@ hr {
   background: #c4c4c4;
   border-radius: 20px;
   height: 16rem;
+  opacity: 0.90;
 }
 
 .nav-cards {
@@ -241,11 +241,11 @@ hr {
   }
 
   h1 {
-    font-size: 42px !important;
+    font-size: 36px !important;
   }
   
   p {
-    font-size: 30px !important;
+    font-size: 24px !important;
   }
 
   .card {
@@ -265,6 +265,10 @@ hr {
   
   p {
     font-size: 18px !important;
+  }
+
+  .block-content-background {
+    height: 12rem;
   }
 
   .user-nav {
@@ -289,6 +293,10 @@ hr {
 }
 
 @media only screen and (max-width: 685px) {
+  .block-content-background {
+    height: 12rem;
+  }
+
   .user-nav {
     display: none;
   }
@@ -383,6 +391,28 @@ hr {
     margin-bottom: 3rem;
     width: 100%;
     height: 16rem;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .nav-cards h1 {
+    font-size: 40px !important;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .footer p {
+    font-size: 12px !important;
+  }
+
+  .grid h1 {
+    font-size: 24px !important;
+  }
+
+  .grid p {
+    font-size: 18px !important;
   }
 }
 
