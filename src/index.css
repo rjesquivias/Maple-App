@@ -20,7 +20,7 @@ body {
 
 .nav {
   height: 0.14;
-  min-height: 30px;
+  min-height: 60px;
   background-color: #333333;
   opacity: 0.66;
   display: flex;
@@ -196,6 +196,14 @@ hr {
     font-size: 24px;
   }
 
+  h1 {
+    font-size: 30px !important;
+  }
+  
+  p {
+    font-size: 18px !important;
+  }
+
   .user-nav {
     font-size: 16px;
   }
@@ -204,20 +212,16 @@ hr {
     padding: 0 1rem;
   }
 
-  h1 {
-    font-size: 36px !important;
+  .block-content.h1 {
+    font-size: 30px;
   }
-  
-  p {
-    font-size: 24px !important;
+
+  .block-content.p {
+    font-size: 24px;
   }
 }
 
 @media only screen and (max-width: 685px) {
-  body {
-    font-size: 18px;
-  }
-
   .user-nav {
     display: none;
   }
@@ -231,20 +235,23 @@ hr {
   }
 
   .ham-nav {
-    position: fixed;
-    top: 0;
-    right: -30px;
-    margin-top: 60px;
-    margin-right: 0px;
+    position: absolute;
+    top: 0px;
+    right: -90px;
+    width: 200px;
     float: right;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     opacity: 0.00;
     pointer-events: none;
     cursor: pointer;
     transition: all .5s ease-in-out;
+    background-color: rgb(95, 95, 95);
+    height: 100vh;
+    padding-top: 100px;
+    z-index:-1;
   }
 
   .ham-nav.open {
@@ -256,6 +263,8 @@ hr {
 
   .ham-nav__link {
     transition: all .5s ease-in-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .ham-nav::before,
@@ -275,14 +284,6 @@ hr {
     transition: all .5s ease-in-out;
   }
 
-  h1 {
-    font-size: 30px !important;
-  }
-  
-  p {
-    font-size: 18px !important;
-  }
-
   .grid {
     margin-top: 20vh;
     grid-template-columns: 1fr;
@@ -291,49 +292,24 @@ hr {
   .header {
     height: 40vh;
   }
+
+  .block-content.h1 {
+    font-size: 30px;
+  }
+
+  .block-content.p {
+    font-size: 24px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-  body {
-    font-size: 15px;
-  }
-
-  h1 {
-    font-size: 30px !important;
-  }
-  
-  p {
-    font-size: 15px !important;
-  }
-
-  .menu-btn {
-    height: 20px;
-  }
-
-  .menu-btn__burger {
-    width: 20px;
-    height: 2px;
-  }
-
-  .menu-btn__burger::before,
-  .menu-btn__burger::after {
-    width: 20px;
-    height: 2px;
-  }
-
-  .menu-btn__burger::before {
-    transform: translateY(-5px);
-  }
-  
-  .menu-btn__burger::after {
-    transform: translateY(5px);
-  }
 
   .ham-nav.open {
-    transform: translateX(-70px);
+    transform: translateX(-50px);
   }
 
-  .ham-nav {
-    margin-top: 40px;
+  .ham-nav__link {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
