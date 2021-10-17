@@ -6,12 +6,7 @@
 
 html, body, #root, .App {
   background-color: #333333;
-  display: flex;
-  flex-direction: column;
-}
-
-.wrapper {
-  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -20,7 +15,6 @@ body {
   font-size: 36px;
   color: white;
   margin: 0 auto;
-  overflow-y: hidden;
 }
 
 .header {
@@ -124,6 +118,10 @@ body {
 }
 
 .ham-nav {
+  display: none;
+}
+
+.ham-nav__link {
   display: none;
 }
 
@@ -343,9 +341,16 @@ hr {
   }
 
   .ham-nav__link {
+    width: 0px;
     transition: all .5s ease-in-out;
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+
+  .ham-nav.open .ham-nav__link {
+    display: inline;
+    width: 100%;
+    text-align: center;
   }
 
   .ham-nav::before,
