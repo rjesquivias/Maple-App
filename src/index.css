@@ -333,7 +333,7 @@ hr {
   }
 
   .ham-nav.open {
-    width: 200px;
+    width: 160px;
     transition: all .5s ease-in-out;
     opacity: 100.00;
     pointer-events: all;
@@ -427,10 +427,6 @@ hr {
 }
 
 @media only screen and (max-width: 400px) {
-
-  .ham-nav.open {
-    transform: translateX(-50px);
-  }
 
   .ham-nav__link {
     margin-top: 10px;
