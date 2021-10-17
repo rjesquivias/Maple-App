@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-  height: 66vh;
+  height: 32rem;
   background-image: url(img/Maple\ Hero.jpg);
   background-size: cover;
   background-position: top;
@@ -249,8 +249,8 @@ hr {
     cursor: pointer;
     transition: all .5s ease-in-out;
     background-color: rgb(95, 95, 95);
-    height: 100vh;
-    padding-top: 100px;
+    height: 100rem;
+    margin-top: 100px;
     z-index:-1;
   }
 
@@ -285,12 +285,12 @@ hr {
   }
 
   .grid {
-    margin-top: 20vh;
+    margin-top: 10rem;
     grid-template-columns: 1fr;
   }
 
   .header {
-    height: 40vh;
+    height: 20rem;
   }
 
   .block-content.h1 {
