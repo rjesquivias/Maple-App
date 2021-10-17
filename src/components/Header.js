@@ -1,3 +1,4 @@
+import BlockContent from "./BlockContent";
 import Navbar from "./Navbar";
 
 const Header = () => {
@@ -5,6 +6,9 @@ const Header = () => {
         <>
         <header className="header">
             <Navbar />
+            <div className="grid">
+            <BlockContent className="item item-1 block-content"/>
+            </div>
         </header>
         </>
     );
