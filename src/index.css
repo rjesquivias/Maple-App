@@ -15,7 +15,6 @@ body {
   font-weight: 100;
   font-size: 36px;
   color: white;
-  min-height: 100vh;
   margin: 0 auto;
 }
 
@@ -305,8 +304,8 @@ hr {
   .ham-nav {
     position: absolute;
     top: 0px;
-    right: -90px;
-    width: 200px;
+    right: -60px;
+    width: 0px;
     float: right;
     display: flex;
     align-items: center;
@@ -317,12 +316,13 @@ hr {
     cursor: pointer;
     transition: all .5s ease-in-out;
     background-color: rgb(95, 95, 95);
-    height: 100rem;
+    height: 94rem;
     padding-top: 100px;
     z-index:-1;
   }
 
   .ham-nav.open {
+    width: 200px;
     transition: all .5s ease-in-out;
     opacity: 100.00;
     pointer-events: all;
