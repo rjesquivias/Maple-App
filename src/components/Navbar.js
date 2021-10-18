@@ -1,14 +1,25 @@
 import Hamburger from "./Hamburger";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
         <div className="nav">
-            <span className="logo">Premier Maple Leaf</span>
+            <Link to="/" className="logo">
+                Premier Maple Leaf
+            </Link>
             <nav className="user-nav">
-                <span className="user-nav__link">Home</span>
-                <span className="user-nav__link">Bio</span>
-                <span className="user-nav__link">Gallery</span>
-                <span className="user-nav__link">Breeder</span>
+                <Link to="/" className="user-nav__link">
+                    Home
+                </Link>
+                <Link to="/bio" className="user-nav__link">
+                    Bio
+                </Link>
+                <Link to="/gallery" className="user-nav__link">
+                    Gallery
+                </Link>
+                <Link to="/breeder" className="user-nav__link">
+                    Breeder
+                </Link>
             </nav> 
             <Hamburger />
         </div>

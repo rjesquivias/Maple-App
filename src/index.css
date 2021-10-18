@@ -17,11 +17,28 @@ body {
   margin: 0 auto;
 }
 
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header {
   height: 32rem;
-  background-image: url(img/Maple\ Hero.jpg);
   background-size: cover;
   background-position: top;
+}
+
+.header.home {
+  background-image: url(img/Maple\ Hero.jpg);
+}
+
+.header.bio {
+  background-image: url(img/maple-tree.png);
 }
 
 .nav {

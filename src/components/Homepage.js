@@ -5,8 +5,8 @@ import NavCards from "./NavCards";
 const Homepage = () => {
     return (
         <>
-        <div className="wrapper">
-        <Header />
+        <div className="homepage">
+        <Header className="home"/>
         <NavCards />
         <Footer />
         </div>

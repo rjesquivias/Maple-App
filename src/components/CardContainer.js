@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Card from "./Card";
 
 const CardContainer = () => {
@@ -6,9 +7,15 @@ const CardContainer = () => {
 
     return (
         <div className={className} >
-        <Card className="card-item-1" title="Bio"/>
-        <Card className="card-item-2" title="Gallery"/>
-        <Card className="card-item-3" title="Breeder"/>
+        <Link to="/bio">
+            <Card className="card-item-1" title="Bio"/>
+        </Link>
+        <Link to="/gallery">
+            <Card className="card-item-2" title="Gallery"/>
+        </Link>
+        <Link to="/breeder">
+            <Card className="card-item-3" title="Breeder"/>
+        </Link>
         </div>
     );
 };

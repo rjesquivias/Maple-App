@@ -1,13 +1,14 @@
 import BlockContent from "./BlockContent";
 import Navbar from "./Navbar";
 
-const Header = () => {
+const Header = (props) => {
     return (
         <>
-        <header className="header">
+        <header className={"header " + props.className}>
             <Navbar />
             <div className="grid">
-            <BlockContent className="item item-1 block-content"/>
+            {props.className === "home" && 
+            <BlockContent className="item item-1 block-content"/>}
             </div>
         </header>
         </>
