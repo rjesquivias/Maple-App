@@ -6,9 +6,9 @@ const CardContainer = () => {
 
     return (
         <div className={className} >
-        <Card className="card-item-1" title="Bio" path="/bio" />
-        <Card className="card-item-2" title="Gallery" path="/gallery" />
-        <Card className="card-item-3" title="Breeder" path="/breeder" />
+            <Card image="img/bio-image.png" alt="Library with ladder in front" title="Bio" path="/bio" />
+            <Card image="img/gallery-image.png" alt="Gallery room with paintings on the walls" title="Gallery" path="/gallery" />
+            <Card image="img/breeder-image.png" alt="Hand holding a newborn puppy" title="Breeder" path="/breeder" />
         </div>
     );
 };
