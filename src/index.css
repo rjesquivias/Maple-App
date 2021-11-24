@@ -215,7 +215,6 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   padding: 5rem 1rem;
 }
 
@@ -226,8 +225,8 @@ hr {
   border-radius: 20px;
   box-shadow: 5px 5px 5px grey;
   cursor: pointer;
-  width: min(30%, 20rem);
   height: 20rem;
+  margin: 0 2rem;
 }
 
 .cover {
@@ -629,4 +628,8 @@ img {
   .breeder-content-w {
     flex-direction: column;
   }
+}
+
+.card-container a {
+  width: 100%;
 }
