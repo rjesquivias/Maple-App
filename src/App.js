@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Bio from './components/Bio';
 import Gallery from './components/Gallery';
+import Breeder from './components/Breeder';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
             <Gallery />
           </Route>
           <Route path="/breeder">
-            <h1>breeder</h1>
+            <Breeder />
           </Route>
           <Route path="/">
             <Homepage />
