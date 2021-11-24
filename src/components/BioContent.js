@@ -4,7 +4,7 @@ import SectionTitle from "./SectionTitle";
 const BioContent = (props) => {
     return (
         <div className={props.className}>
-            <SectionTitle title="Example title" className="content-title"/>
+            <SectionTitle title="Biography" className="content-title"/>
             <div className="bio-content-w">
                 <BioSegment 
                     className="bio-right" 
